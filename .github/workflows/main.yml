@@ -1,1 +1,9 @@
-hello
+name: Intern-task-511-pipeline
+on: workflow_dispatch
+
+jobs:
+    test-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
